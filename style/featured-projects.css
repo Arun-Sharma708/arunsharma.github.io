@@ -1,0 +1,102 @@
+.featured-projects{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 6% 12% 1fr 18%;
+    grid-template-rows: 10vh 45vh 45vh 45vh 45vh;
+}
+.featured-projects .projects-area{
+    grid-column: 3/4;
+    grid-row: 2/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured-projects h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+}
+.featured-projects span{
+    font-weight: normal;
+    color: mediumspringgreen;
+    font-size: 2.5rem;
+}
+.featured-projects .featured-project{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+}
+.featured-project:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.featured-project:nth-child(odd) .description{
+    align-items: flex-start;
+    text-align: left;
+}
+.featured-project .image-container{
+    flex: 1;
+    height: 35vh;
+    width: 45%;
+    background: mediumspringgreen;
+    overflow: hidden;
+}
+.featured-project img{
+    height: 35vh;
+    width: 100%;
+    opacity: 0.4;
+}
+.featured-project img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.featured-project .description{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+.featured-project .description span{
+    font-size: 1.2rem;
+}
+.featured-project .description h1{
+    font-size: 2rem;
+    padding:.5rem 0;
+}
+.featured-project .description p{
+    display: block;
+    width: 110%;
+    background: #00001a;
+    text-align: left;
+    padding: 2rem 1rem;
+    color: lightslategray;
+    font-size: 1.2rem;
+    z-index: 2;
+    opacity: 1;
+    border-radius: 2px;
+}
+.featured-project .description .tech-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    padding-top: 2rem;
+    color: dimgray;
+}
+.featured-project i{
+    font-size: 1.5rem;
+    color: dimgray;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+}
+.featured-project:nth-child(even) i{
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+.featured-project:nth-child(even) p{
+    text-align: right;
+}
