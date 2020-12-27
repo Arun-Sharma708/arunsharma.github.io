@@ -19,3 +19,6 @@ body{
 	background: #000d1a;
 	position: relative;
 }
+nav i{
+	display:none;
+}
