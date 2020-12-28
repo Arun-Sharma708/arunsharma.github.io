@@ -19,3 +19,9 @@ body{
 	background: #000d1a;
 	position: relative;
 }
+.bars-icon{
+	display: none;
+}
+.small-heading{
+	display: none;
+}
