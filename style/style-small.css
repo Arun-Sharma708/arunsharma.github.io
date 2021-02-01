@@ -127,6 +127,17 @@
     .about-me h1{
         margin-bottom: 0;
     }
+.about-me p{
+	font-size:1.8rem;
+	line-height:2.4rem;
+}
+.about-me .technologies ul li{
+	font-size:1.8rem;
+}
+.about-me .technologies ul:nth-child(2){
+	margin-left:2.8rem;
+	width:20rem;
+}
     .featured-projects{
         display: flex;
         padding: 0 5%;
